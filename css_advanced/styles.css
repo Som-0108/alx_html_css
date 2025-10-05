@@ -1,4 +1,4 @@
-/* --- IMPORT FONTS --- */
+ /* --- IMPORT FONTS --- */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
 /* --- GLOBAL STYLES --- */
@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;
 }
@@ -25,13 +25,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0; /* adjust from Figma */
+  padding: 20px 0;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 header .logo {
-  width: 150px; /* adjust from Figma */
+  width: 150px;
   height: auto;
 }
 
@@ -181,6 +181,69 @@ header nav ul li a:hover {
   line-height: 1.4;
 }
 
+/* --- MEMBERSHIP SECTION --- */
+.membership-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.membership-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222222;
+}
+
+.membership-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.membership-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.membership-card:hover {
+  transform: translateY(-5px);
+}
+
+.membership-card .membership-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #222222;
+}
+
+.membership-card .membership-price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ff6600;
+}
+
+.membership-card .membership-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.membership-card .membership-features li {
+  margin-bottom: 10px;
+}
+
 /* --- FOOTER --- */
 footer {
   background-color: #f2f2f2;
@@ -209,4 +272,4 @@ footer .footer-nav li a {
 
 footer .footer-nav li a:hover {
   color: #ff6600;
-} 
+}
