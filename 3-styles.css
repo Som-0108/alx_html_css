@@ -1,0 +1,154 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #000;
+    padding: 15px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff4c60;
+}
+
+/* Hero */
+.hero {
+    background: url('images/headphones-hero.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+}
+
+.hero-content p {
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff4c60;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e33b4e;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+.feature {
+    width: 30%;
+    text-align: center;
+}
+
+/* About */
+.about {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+/* Contact */
+.contact {
+    padding: 50px 10%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #ff4c60;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #e33b4e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+}
+
+/* Animations */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff4c60;
+    box-shadow: 0 0 5px rgba(255, 76, 96, 0.5);
+    outline: none;
+}

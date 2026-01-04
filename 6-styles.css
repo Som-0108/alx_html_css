@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+/* Section Styling */
+.our-results {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.our-results h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+/* Container for Pentagons */
+.results-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Pentagon Shape using Clip-path */
+.pentagon {
+  width: 120px;
+  height: 120px;
+  background: #ff4d4d;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.pentagon .number {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.pentagon p {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
